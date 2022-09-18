@@ -65,7 +65,7 @@ class BodyPartSelector extends StatelessWidget {
                       bodyParts.withToggledId(s, mirror: mirrored),
                     ),
                 context: context,
-                selectedColor: Colors.grey.shade500,
+                selectedColor: Colors.grey.shade300,
                 selectedOutlineColor: Color(0xff030FA4),
                 unselectedColor: Colors.white,
                 unselectedOutlineColor: Color(0xff030FA4)),
