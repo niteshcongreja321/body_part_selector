@@ -42,9 +42,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         child: BodyPartSelectorTurnable(
+          
           bodyParts: _bodyParts,
           onSelectionUpdated: (p) => setState(() => _bodyParts = p),
           labelData: const RotationStageLabelData(
+          
             front: 'Vorne',
             left: 'Links',
             right: 'Rechts',

@@ -59,17 +59,16 @@ class BodyPartSelector extends StatelessWidget {
           gesturesToOverride: const [GestureType.onTapDown],
           builder: (context) => CustomPaint(
             painter: _BodyPainter(
-              root: drawable,
-              bodyParts: bodyParts,
-              onTap: (s) => onSelectionUpdated?.call(
-                bodyParts.withToggledId(s, mirror: mirrored),
-              ),
-              context: context,
-              selectedColor: Colors.grey,
-              selectedOutlineColor: Colors.grey,
-              unselectedColor: Colors.blue,
-              unselectedOutlineColor: Colors.blue,
-            ),
+                root: drawable,
+                bodyParts: bodyParts,
+                onTap: (s) => onSelectionUpdated?.call(
+                      bodyParts.withToggledId(s, mirror: mirrored),
+                    ),
+                context: context,
+                selectedColor: Colors.grey.shade500,
+                selectedOutlineColor: Color(0xff030FA4),
+                unselectedColor: Colors.white,
+                unselectedOutlineColor: Color(0xff030FA4)),
           ),
         ),
       ),

@@ -30,8 +30,8 @@ class BodyPartSelectorTurnable extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: BodyPartSelector(
-            selectedColor: Colors.grey,
-            selectedOutlineColor: Colors.grey,
+            selectedColor: Colors.blue,
+            selectedOutlineColor: Colors.purple,
             unselectedColor: Colors.blue,
             unselectedOutlineColor: Colors.blue,
             side: side.map(
